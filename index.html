@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,9 +8,9 @@
     <title>NA2020</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="NA2020_files/bootstrap.css">
+    <link rel="stylesheet" href="NA2020_files/ionicons.css">
+    <link rel="stylesheet" href="NA2020_files/main.css">
 </head>
 <body data-spy="scroll" data-target="#site-nav">
     <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
@@ -22,7 +22,7 @@
                     <a class="logo" href="http://en.um.ac.ir/">
 
                         <!-- logo image  -->
-                        <img src="assets/images/logo.jpg" alt="Logo">
+                        <img src="NA2020_files/logo.jpg" alt="Logo">
 
                         online lectures
                     </a>
@@ -41,14 +41,14 @@
                 <ul class="nav navbar-nav navbar-right">
 
                     <!-- navigation menu -->
-                    <li class="active"><a data-scroll href="#about">About</a></li>
-                    <li><a data-scroll href="#speakers">Speakers</a></li>
-                    <li><a data-scroll href="#registration">Registration</a></li>
-                    <li><a href="./sched/schedule.html">Schedule</a></li>
-                    <li><a data-scroll href="#gphoto">Group photo</a></li>
+                    <li class="active"><a data-scroll="" href="#about">About</a></li>
+                    <li><a data-scroll="" href="#speakers">Speakers</a></li>
+                    <li><a data-scroll="" href="#registration">Registration</a></li>
+                    <li><a href="https://na2020.onrender.com/sched/schedule.html">Schedule</a></li>
+                    <li><a data-scroll="" href="#gphoto">Group photo</a></li>
                     <!-- <li><a data-scroll href="#partner">Partner</a></li>  -->
                     <!-- <li><a data-scroll href="#">Sponsorship</a></li> -->
-                    <li><a data-scroll href="#contact">Contact</a></li>
+                    <li><a data-scroll="" href="#contact">Contact</a></li>
                     <!-- <li><a data-scroll href="#photos">Photos</a></li> -->
 
                 </ul>
@@ -64,12 +64,12 @@
             <p>on</p>
 
             <h1>Numerical Astrophysics</h1>
-            </br>
+            <br>
             <h2>July 27-31, 2020 / 6-10 Mordad, 1399</h2>
 
 <!--             <p>Online Lectures</p> -->
 
-            <a class="btn btn-white" data-scroll href="#registration">Register Now</a>
+            <a class="btn btn-white" data-scroll="" href="#registration">Register Now</a>
 
         </div>
     </header>
@@ -81,8 +81,8 @@
 <!--                     <img src="assets/images/Poster_small.jpg" alt="poster"> -->
 
                     <figure>
-                      <a href="assets/images/Poster.jpg">
-                        <img alt="" class="img-responsive" src="assets/images/Poster_small.jpg">
+                      <a href="https://na2020.onrender.com/assets/images/Poster.jpg">
+                        <img alt="" class="img-responsive" src="NA2020_files/Poster_small.jpg">
                       </a>
                     </figure>
 
@@ -94,13 +94,23 @@
 
                     <h3 class="section-title multiple-title">General Info</h3>
 
-                    <p>Astronomical tests, unlike experiments in many other branches of science, are usually impossible to carry out in labs.
-                       For example, we can not make a single star on Earth, let alone a galaxy! Astronomical systems are usually much bigger in size,
-                        larger in mass and more complex in structure than we can manipulate them on Earth to justify our models and their predictions.
-                        Fortunately, computers and computational methods provide us easier and more convenient ways to study the  astronomical systems.
-                        Using numerical simulations, we can examine, correct, and improve our models until we understand our target system.
-                        However, we must have the knowledge of using these methods and be aware of their pros and cons.
-                        In this crash course, we aim to give our audience the first kick for properly using and understanding some of the
+                    <p>Astronomical tests, unlike experiments in many 
+other branches of science, are usually impossible to carry out in labs.
+                       For example, we can not make a single star on 
+Earth, let alone a galaxy! Astronomical systems are usually much bigger 
+in size,
+                        larger in mass and more complex in structure 
+than we can manipulate them on Earth to justify our models and their 
+predictions.
+                        Fortunately, computers and computational methods
+ provide us easier and more convenient ways to study the  astronomical 
+systems.
+                        Using numerical simulations, we can examine, 
+correct, and improve our models until we understand our target system.
+                        However, we must have the knowledge of using 
+these methods and be aware of their pros and cons.
+                        In this crash course, we aim to give our 
+audience the first kick for properly using and understanding some of the
                         important numerical methods in astrophysics.
                     </p>
 
@@ -109,20 +119,82 @@
                 <div class="col-sm-3">
 
                     <h3 class="section-title multiple-title">Topics</h3>
-                    <ul class="list-arrow-right">
-                        <li>N-body simulations</li>
-                        <li>Numerical hydrodynamics</li>
-                        <li>Self-gravity in hydrodynamical simulations</li>
-                        <li>Numerical magnetohydrodynamics</li>
-                    </ul>
+						    <div class="dropdown">
+								<button class="dropbtn">Numerical hydrodynamics</button>
+								<div id="numhydro" class="dropdown-content">
+									<a> Hydrodynamical equations </a>
+									<a> Discretization: particle vs grid </a>
+									<a> Finite differences for 1D hydro </a>
+									<a> Compare different methods </a>
+									<a> Stability analysis </a>
+									<a> Time step constraints </a>
+									<a> Multi-dimensional hydrodynamics </a>
+									<a> The wave structure of the equations </a>
+									<a> Example of 1D shock tube </a>
+									<a> More examples in 2D and 3D </a>
+								</div>
+						    </div>
 
+						    <br>
+
+							<div class="dropdown">
+								<button class="dropbtn">N-body simulations</button>
+								<div id="nbody" class="dropdown-content">
+									<a> Euler and Runge-Kutta methods </a> 
+									<a> Symplectic integrators </a>
+									<a> Exact and approximate N-Body </a>
+									<a> N-Body Simulations with REBOUND </a>
+								</div>
+						    </div>
+
+						    <br>
+
+							<div class="dropdown">
+								<button class="dropbtn">Self-gravity</button>
+								<div id="selfgravity" class="dropdown-content">
+									<a> Gravity </a> 
+									<a> Hydrodynamical equations with gravity </a>
+									<a> How to solve Poison equations </a>
+									<a> How to solve hydrodynamical equations with self-gravity </a>
+								</div>
+						    </div>
+
+						    <br>
+
+							<div class="dropdown">
+								<button class="dropbtn">Numerical magnetohydrodynamics</button>
+								<div id="mhd" class="dropdown-content">
+									<a> Theoretical aspects of magnetohydrodynamics </a> 
+									<a> Recap of Hyperbolic, Parabolic and Elliptic equations, Conservative 
+									and primitive variables in MHD, Numerical discretisation in MHD </a>
+									<a> Methods of Numerically tackling of divergence of B, 
+									Numerical implementation of Non-Ideal MHD terms e.g., Resistivity </a>
+									<a> Hello word PLUTO! </a>
+								</div>
+						    </div>
                 </div>
 
                 <div class="col-sm-12">
 
                     <h3 class="section-title multiple-title">About Lectures</h3>
-                    <p>Many astrophysical systems behave as fluids, and therefore, can be described by hydrodynamical models. On the other hand, gravity, as the building block of astronomy,  can govern the interaction between separate objects or affect the structure of a single object through self-gravity. On top of these, magnetic fields are usually present and complicate the behavior of the systems. Introducing some numerical methods for studying these four topics (hydrodynamics, N-body, self-gravity, and magnetohydrodynamics), will be the focus of the lectures in this crash course.</p>
-                    <p>One lecture will be held per day from 27th to 30th of July, and the 31st of July will be the discussion day between the participants. In the first four days, there will be a lecture per day for 3-4 hours with a few breaks. The participants are supposed to work on the exercises for the rest of the day. Please note that, because of the different time-zones of our speakers, each day's schedule is different from the others. Please check the program for more details. On the last day, some volunteers among the participants will have the chance to present the results of the exercises and discuss them.
+                    <p>Many astrophysical systems behave as fluids, and 
+therefore, can be described by hydrodynamical models. On the other hand,
+ gravity, as the building block of astronomy,  can govern the 
+interaction between separate objects or affect the structure of a single
+ object through self-gravity. On top of these, magnetic fields are 
+usually present and complicate the behavior of the systems. Introducing 
+some numerical methods for studying these four topics (hydrodynamics, 
+N-body, self-gravity, and magnetohydrodynamics), will be the focus of 
+the lectures in this crash course.</p>
+                    <p>One lecture will be held per day from 27th to 
+30th of July, and the 31st of July will be the discussion day between 
+the participants. In the first four days, there will be a lecture per 
+day for 3-4 hours with a few breaks. The participants are supposed to 
+work on the exercises for the rest of the day. Please note that, because
+ of the different time-zones of our speakers, each day's schedule is 
+different from the others. Please check the program for more details. On
+ the last day, some volunteers among the participants will have the 
+chance to present the results of the exercises and discuss them.
                     </p>
 
                 </div>
@@ -135,7 +207,7 @@
                        <a href="https://github.com/gnudatalanguage/gdl"><mark>GDL</mark></a> for plotting the results is presumed.
                       Also, familiarity with the essential concepts of <a href="http://www.scholarpedia.org/article/Encyclopedia:Fluid_dynamics"><mark>hydrodynamics</mark></a> is assumed.
                       Participants are encouraged to use Gnu/Linux operating system and should have
-                      <a href="https://github.com/astrofum/na2020"><mark>Pluto</mark></a>
+                      <a href="http://plutocode.ph.unito.it/"><mark>Pluto</mark></a>
                       and <a href="https://github.com/hannorein/rebound"><mark>Rebound</mark></a> codes installed on their computing systems before the workshop.
                       They should also have essential python libraries such as numpy, matplotlib, etc installed.
                       It is recommended to install a complete python distribution, e.g.
@@ -156,7 +228,7 @@
                     <h3 class="section-title">Scientific Committee</h3>
                     <ul class="list-arrow-right">
                         <li><a href="https://s-abbassi.github.io/">Shahram Abbassi (FUM)</a></li>
-                        <li><a href="https://uni-tuebingen.de/en/faculties/faculty-of-science/departments/physics/institutes/astronomy-astrophysics/institute/computational-physics/staff/">Sareh Ataiee (Tübingen university) (Chair)</a></li>
+                        <li><a href="https://uni-tuebingen.de/en/faculties/faculty-of-science/departments/physics/institutes/astronomy-astrophysics/institute/computational-physics/staff/">Sareh Ataiee (Tübingen university/FUM) (Chair)</a></li>
                         <li><a href="https://smhr.netlify.app/">Mohammad Hosseinirad (FUM)</a></li>
                         <li><a href="http://mahmood-roshan.ir/">Mahmood Roshan (FUM)</a></li>
                     </ul>
@@ -193,7 +265,7 @@
                     <div class="speaker">
 
                         <figure>
-                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/Tomoyuki_Hanawa.jpg">
+                            <img alt="" class="img-responsive center-block" src="NA2020_files/Tomoyuki_Hanawa.jpg">
                         </figure>
 
                         <h4><a href="https://www.cfs.chiba-u.ac.jp/outline/staff/hanawa.html">Tomoyuki Hanawa</a></h4>
@@ -208,7 +280,7 @@
                     <div class="speaker">
 
                         <figure>
-                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/Willy_Kley.jpg">
+                            <img alt="" class="img-responsive center-block" src="NA2020_files/Willy_Kley.jpg">
                         </figure>
 
                         <h4><a href="https://www.tat.physik.uni-tuebingen.de/~kley/">Willy Kley</a></h4>
@@ -223,7 +295,7 @@
                     <div class="speaker">
 
                         <figure>
-                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/Christoph_Schäfer.jpg">
+                            <img alt="" class="img-responsive center-block" src="NA2020_files/Christoph_Schfer.jpg">
                         </figure>
 
                         <h4><a href="https://www.tat.physik.uni-tuebingen.de/~schaefer/">Christoph Schäfer</a></h4>
@@ -238,7 +310,7 @@
                     <div class="speaker">
 
                         <figure>
-                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/Bhargav_Vaidya.jpg">
+                            <img alt="" class="img-responsive center-block" src="NA2020_files/Bhargav_Vaidya.jpg">
                         </figure>
 
                         <h4><a href="http://www.iiti.ac.in/people/~bvaidya/index.html">Bhargav Vaidya</a></h4>
@@ -252,7 +324,7 @@
 
 
             </div>
-        </div>
+        
     </section>
 
     <section id="registration" class="section registration">
@@ -263,7 +335,9 @@
                 </div>
             </div>
 
-                <p>Deadline for registration: July 18, 2020 / 28 Tir 1399 (Please Note due to the limitation, priority is given to those who register earlier.)</p>
+                <p>Deadline for registration: July 18, 2020 / 28 Tir 
+1399 (Please Note due to the limitation, priority is given to those who 
+register earlier.)</p>
                 <p>There is no registration fee for the workshop.</p>
                 <div class="text-center mt20">
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSenqSlpXoACsSEqYOvgb8NrzwNhZ363XZsprynZixe2vrbthw/viewform" class="btn btn-black" id="registration-submit-btn">Go to registration page</a>
@@ -280,8 +354,8 @@
 
                     <p>All the talks will be given online using bigbluebutton. Please watch this video to see how you can use it.</p>
                     <div>
-                         <video width="320" height="230" controls>
-                            <source src="assets/video/bbb.mp4" type="video/mp4">
+                         <video controls="controls" width="320" height="230">
+                            <source src="NA2020_files/bbb.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                          </video>
                     </div>
@@ -308,7 +382,7 @@
                     <a class="partner-box partner-box-3"></a>
                 </div>
             </div>
-    </section>
+    </div></section>
 
     <section id="gphoto" class="section registration">
         <div class="container">
@@ -318,7 +392,7 @@
                 </div>
             </div>
             <figure>
-                <img alt="NA2020_group_photo" class="img-responsive center-block" src="assets/images/photos/Group-Photo-small.jpg">
+                <img alt="NA2020_group_photo" class="img-responsive center-block" src="NA2020_files/Group-Photo-small.jpg">
             </figure>
              <div class="text-center mt20">
                     <!-- <a href="assets/images/photos/Group-Photo.jpg">Click to see the high resolution photo</a> -->
@@ -335,8 +409,8 @@
                     <h3 class="section-title">Contact us</h3>
                 </div>
             </div>
-            <p>You can contact us using the e-mail address: <a href = "mailto: astrofumgroup@gmail.com">astrofumgroup@gmail.com</a></p>
-            <p>Our telegram channel is: <a href = "https://t.me/Astrofumgroup2020">Astrofumgroup2020</a></p>
+            <p>You can contact us using the e-mail address: <a href="mailto: astrofumgroup@gmail.com">astrofumgroup@gmail.com</a></p>
+            <p>Our telegram channel is: <a href="https://t.me/Astrofumgroup2020">Astrofumgroup2020</a></p>
         </div>
     </section>
 
@@ -358,9 +432,10 @@
     </footer>
 
     <!-- script -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
-</html>
+    <script src="NA2020_files/jquery.js"></script>
+    <script src="NA2020_files/bootstrap.js"></script>
+    <script src="NA2020_files/smooth-scroll.js"></script>
+    <script src="NA2020_files/main.js"></script>
+
+
+</body></html>
